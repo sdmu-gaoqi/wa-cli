@@ -1,0 +1,24 @@
+{
+  "name": "wa-vr-cli",
+  "version": "0.0.1",
+  "description": "vite+react脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vite+react脚手架"
+  ],
+  "bin": {
+    "wa-vr-cli": "./bin/wa-vr-cli"
+  },
+  "author": "GQ-og",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.1",
+    "ora": "^4.0.3"
+  }
+}
