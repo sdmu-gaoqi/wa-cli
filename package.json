@@ -1,6 +1,6 @@
 {
   "name": "wa-vr-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "vite+react脚手架",
   "main": "index.js",
   "scripts": {
