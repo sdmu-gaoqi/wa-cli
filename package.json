@@ -1,6 +1,6 @@
 {
   "name": "wa-vr-cli",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "vite+react脚手架",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,9 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^3.0.0",
+    "child_process": "^1.0.2",
     "commander": "^4.0.1",
+    "compare-versions": "^6.1.1",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.0.1",
     "ora": "^4.0.3"
