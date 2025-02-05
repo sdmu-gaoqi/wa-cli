@@ -1,5 +1,5 @@
 {
-  "name": "wa-vr-cli",
+  "name": "wa-cli",
   "version": "0.0.5",
   "description": "vite+react脚手架",
   "main": "index.js",
@@ -10,17 +10,18 @@
     "vite+react脚手架"
   ],
   "bin": {
-    "wa-vr-cli": "./bin/wa-vr-cli"
+    "wa": "./bin/wa.js"
   },
   "author": "GQ-og",
   "license": "ISC",
   "dependencies": {
     "chalk": "^3.0.0",
     "child_process": "^1.0.2",
-    "commander": "^4.0.1",
+    "commander": "^13.1.0",
     "compare-versions": "^6.1.1",
     "download-git-repo": "^3.0.2",
-    "inquirer": "^7.0.1",
+    "glob": "^11.0.1",
+    "inquirer": "^12.4.1",
     "ora": "^4.0.3"
   }
 }
