@@ -3,15 +3,16 @@ const { program } = require("commander");
 
 const packageJson = require("../package.json");
 const init = require("../lib/init/index.js");
+const command = require("../config/command.js");
 
 program.version(packageJson.version);
 
-program
-  .command("init")
-  .alias("i")
-  .description("vue admin 项目初始化工具")
-  .action((name) => {
-    init(name);
-  });
+command.forEach((item) => {
+  program
+    .command(item.name)
+    .alias(item.alias)
+    .description(item.description)
+    .action(item.action);
+});
 
 program.parse(process.argv);
