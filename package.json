@@ -1,5 +1,5 @@
 {
-  "name": "wa",
+  "name": "wa-cli",
   "version": "0.1.0",
   "description": "wa的脚手架",
   "main": "index.js",
