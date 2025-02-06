@@ -1,13 +1,13 @@
 {
-  "name": "wa-cli",
-  "version": "0.0.5",
-  "description": "vite+react脚手架",
+  "name": "wa",
+  "version": "0.1.0",
+  "description": "wa的脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "vite+react脚手架"
+    "wa的脚手架"
   ],
   "bin": {
     "wa": "./bin/wa.js"
@@ -23,5 +23,8 @@
     "glob": "^11.0.1",
     "inquirer": "^12.4.1",
     "ora": "^4.0.3"
+  },
+  "devDependencies": {
+    "xlsx": "^0.18.5"
   }
 }
