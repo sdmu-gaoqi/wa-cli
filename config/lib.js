@@ -1,9 +1,9 @@
-const modeOptions = ["npm", "yarn", "pnpm"];
+const modeOptions = ["pnpm", "yarn", "npm"];
 
 const libBin = {
-  npm: "npm i",
-  yarn: "yarn",
   pnpm: "pnpm i",
+  yarn: "yarn",
+  npm: "npm i",
 };
 
 const libQuestions = () => [
