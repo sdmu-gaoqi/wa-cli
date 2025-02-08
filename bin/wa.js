@@ -8,11 +8,16 @@ const command = require("../config/command.js");
 program.version(packageJson.version);
 
 command.forEach((item) => {
-  program
+  const c = program
     .command(item.name)
     .alias(item.alias)
-    .description(item.description)
-    .action(item.action);
+    .description(item.description);
+  if (item.options) {
+    Object.keys(item.options).forEach((key) => {
+      c.option(item.options[key], key);
+    });
+  }
+  c.action(item.action);
 });
 
 program.parse(process.argv);

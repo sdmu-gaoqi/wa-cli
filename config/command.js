@@ -1,4 +1,5 @@
 const init = require("../lib/init");
+const server = require("../lib/server");
 const xlsx2Config = require("../lib/locale/xlsx2Config");
 
 const command = [
@@ -9,6 +10,26 @@ const command = [
     action: (name) => {
       init(name);
     },
+  },
+  {
+    name: "server [path]",
+    alias: "s",
+    description: "启动本地服务",
+    action: server,
+    options: {
+      端口: "-P, --port <port>",
+      https: "-S, --https <boolean>",
+    },
+    positional: [
+      {
+        key: "path",
+        option: {
+          default: "dist",
+          describe: "文件路径",
+          type: "string",
+        },
+      },
+    ],
   },
   {
     name: "xlsx2Config [path] [name] [ext]",
