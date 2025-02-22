@@ -10,7 +10,7 @@
     "wa的脚手架"
   ],
   "bin": {
-    "wa": "./bin/wa.js"
+    "wa": "bin/wa.js"
   },
   "author": "GQ-og",
   "license": "ISC",
