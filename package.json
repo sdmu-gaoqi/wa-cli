@@ -27,13 +27,12 @@
     "download-git-repo": "^3.0.2",
     "glob": "^11.0.1",
     "inquirer": "^12.4.1",
-    "ora": "^4.0.3"
-  },
-  "devDependencies": {
+    "ora": "^4.0.3",
     "http-server": "^14.1.1",
     "minimist": "^1.2.8",
     "xlsx": "^0.18.5"
   },
+  "devDependencies": {},
   "directories": {
     "lib": "lib"
   }
