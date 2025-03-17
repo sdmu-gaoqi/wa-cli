@@ -1,6 +1,6 @@
 {
   "name": "@wagq/wa-cli",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "wa的脚手架",
   "main": "index.js",
   "scripts": {
@@ -26,10 +26,10 @@
     "compare-versions": "^6.1.1",
     "download-git-repo": "^3.0.2",
     "glob": "^11.0.1",
-    "inquirer": "^12.4.1",
-    "ora": "^4.0.3",
     "http-server": "^14.1.1",
+    "inquirer": "^12.4.1",
     "minimist": "^1.2.8",
+    "ora": "^4.0.3",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {},
