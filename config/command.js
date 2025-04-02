@@ -1,8 +1,17 @@
 const init = require("../lib/init");
 const server = require("../lib/server");
 const xlsx2Config = require("../lib/locale/xlsx2Config");
+const asyncDaml = require('../lib/daml/async')
 
 const command = [
+  {
+    name: "daml",
+    alias: "d",
+    description: "同步低代码逻辑器文件",
+    action: () => {
+      asyncDaml();
+    },
+  },
   {
     name: "init",
     alias: "i",
