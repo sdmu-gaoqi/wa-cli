@@ -3,11 +3,15 @@
 使用方式 全局安装后 可使用 wa [命令]
 
 - 初始化项目
-  wa init
+  ```bash
+    wa init
+  ```
 
 - 启动本地服务
-  wa server [path]
-  参数
+  ```bash
+    wa server [path]
+  ```
+  可选参数
   -P 指定端口
 
 - 转换 xlsx 文件为多语言配置
@@ -17,3 +21,8 @@
   - path 文件路径
   - name 被转换目标文件名称
   - ext 转换后文件扩展名 json 或 ts
+
+- 同步远端低代码配置
+  ```bash
+  wa daml
+  ```
