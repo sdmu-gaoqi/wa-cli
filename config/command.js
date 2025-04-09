@@ -2,6 +2,7 @@ const init = require("../lib/init");
 const server = require("../lib/server");
 const xlsx2Config = require("../lib/locale/xlsx2Config");
 const asyncDaml = require('../lib/daml/async')
+const asyncDamlByApp = require('../lib/daml/asyncByApp')
 
 const command = [
   {
@@ -11,6 +12,19 @@ const command = [
     action: () => {
       asyncDaml();
     },
+  },
+  {
+    name: "damls",
+    description: `从应用同步所有页面的逻辑器与变量值,
+    可将appId,branchid,token配置到~/.damlrc文件中,
+    格式为{"origin":string,"appId":string,"branchid":string,"token":string, "appName": string}[]
+    其中origin为请求域名(/api/assembler/page/list(页面列表)接口域名),
+    appId,branchid,token为请求参数,
+    appName为应用名称,也是你区分不同应用的标识,所有生成的文件都会放在appName文件夹下`,
+    alias: "da",
+    action: () => {
+      asyncDamlByApp()
+    }
   },
   {
     name: "init",
