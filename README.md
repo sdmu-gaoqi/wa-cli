@@ -17,7 +17,8 @@
     wa server [path]
   ```
   可选参数
-  -P 指定端口
+  -P 3000 指定端口
+  -S true 开启https
 
 - 转换 xlsx 文件为多语言配置
   wa xlsx2Config [path] [name] [ext]

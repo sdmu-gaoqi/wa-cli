@@ -1,6 +1,6 @@
 {
   "name": "@wagq/wa-cli",
-  "version": "0.6.6",
+  "version": "0.6.10",
   "description": "wa的脚手架",
   "main": "index.js",
   "scripts": {
