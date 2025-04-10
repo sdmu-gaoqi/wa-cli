@@ -1,6 +1,6 @@
 {
   "name": "@wagq/wa-cli",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "wa的脚手架",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,6 @@
     "ora": "^4.0.3",
     "xlsx": "^0.18.5"
   },
-  "devDependencies": {},
   "directories": {
     "lib": "lib"
   }
