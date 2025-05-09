@@ -38,6 +38,9 @@ importers:
       ora:
         specifier: ^4.0.3
         version: 4.1.1
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
       xlsx:
         specifier: ^0.18.5
         version: 0.18.5
@@ -849,6 +852,11 @@ packages:
   prepend-http@2.0.0:
     resolution: {integrity: sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==}
     engines: {node: '>=4'}
+
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
@@ -1900,6 +1908,8 @@ snapshots:
       - supports-color
 
   prepend-http@2.0.0: {}
+
+  prettier@3.5.3: {}
 
   process-nextick-args@2.0.1: {}
 
