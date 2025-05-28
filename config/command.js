@@ -1,8 +1,9 @@
 const init = require("../lib/init");
 const server = require("../lib/server");
 const xlsx2Config = require("../lib/locale/xlsx2Config");
-const asyncDaml = require('../lib/daml/async')
-const asyncDamlByApp = require('../lib/daml/asyncByApp')
+const asyncDaml = require("../lib/daml/async");
+const asyncDamlByApp = require("../lib/daml/asyncByApp");
+const batchUpdate = require("../lib/batchUpdate");
 
 const command = [
   {
@@ -11,6 +12,14 @@ const command = [
     description: "同步低代码逻辑器文件",
     action: () => {
       asyncDaml();
+    },
+  },
+  {
+    name: "batchUpdate",
+    alias: "bu",
+    description: "批量升级依赖包,可以指定组织,只更新组织下的依赖",
+    action: () => {
+      batchUpdate();
     },
   },
   {
@@ -23,8 +32,8 @@ const command = [
     appName为应用名称,也是你区分不同应用的标识,所有生成的文件都会放在appName文件夹下`,
     alias: "da",
     action: () => {
-      asyncDamlByApp()
-    }
+      asyncDamlByApp();
+    },
   },
   {
     name: "init",
