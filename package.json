@@ -1,12 +1,16 @@
 {
   "name": "@wagq/wa-cli",
-  "version": "0.6.24",
+  "version": "0.6.25",
   "description": "wa的脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pub": "npm publish --access public --registry=https://registry.npmjs.org",
     "dev": "node ./bin/wa.js"
+  },
+  "exports": {
+    "cert": "./config/cert.pem",
+    "key": "./config/key.pem"
   },
   "keywords": [
     "wa的脚手架"
