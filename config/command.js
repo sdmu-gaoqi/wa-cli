@@ -4,6 +4,7 @@ const xlsx2Config = require("../lib/locale/xlsx2Config");
 const asyncDaml = require("../lib/daml/async");
 const asyncDamlByApp = require("../lib/daml/asyncByApp");
 const batchUpdate = require("../lib/batchUpdate");
+const web2exe = require("../lib/exe");
 
 const command = [
   {
@@ -91,6 +92,28 @@ const command = [
       },
     ],
     action: xlsx2Config,
+  },
+  {
+    name: "web2exe [name] [path]",
+    alias: 'we',
+    description: "将网页打包成exe",
+    positional: [
+      {
+        key: "name",
+        option: {
+          describe: "应用名称",
+          type: "string",
+        },
+      },
+      {
+        key: "path",
+        option: {
+          describe: "文件路径",
+          type: "string",
+        },
+      },
+    ],
+    action: web2exe,
   },
 ];
 
