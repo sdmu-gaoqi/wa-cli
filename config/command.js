@@ -94,7 +94,7 @@ const command = [
     action: xlsx2Config,
   },
   {
-    name: "web2exe [name] [path]",
+    name: "web2exe [name] [path] [icon]",
     alias: 'we',
     description: "将网页打包成exe",
     positional: [
