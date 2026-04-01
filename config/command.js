@@ -5,6 +5,7 @@ const asyncDaml = require("../lib/daml/async");
 const asyncDamlByApp = require("../lib/daml/asyncByApp");
 const batchUpdate = require("../lib/batchUpdate");
 const web2exe = require("../lib/exe");
+const skill = require("../lib/skill");
 
 const command = [
   {
@@ -114,6 +115,12 @@ const command = [
       },
     ],
     action: web2exe,
+  },
+  {
+    name: "skills",
+    alias: "sk",
+    description: "openskills指令快速导航",
+    action: skill,
   },
 ];
 

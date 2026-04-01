@@ -1,5 +1,13 @@
 # wa-cli
 
+基于 Commander 的本地脚手架（`@wagq/wa-cli`）。
+
+## 安装
+
+```bash
+npm i -g @wagq/wa-cli
+```
+
 全局安装后使用 `wa <命令>` 调用。
 
 ```bash
@@ -112,4 +120,17 @@ wa batchUpdate
 
 ```bash
 wa web2exe MyApp https://example.com ./icon.ico
+```
+
+### skills
+
+- **作用**：交互选择并执行与 `openskills` 相关的常用命令（需本机可执行 `npx`）
+- **用法**：`wa skills`
+- **别名**：`wa sk`
+- **交互选项**
+  - `getList`：执行 `npx openskills install anthropics/skills`
+  - `sync`：执行 `npx openskills sync`
+
+```bash
+wa skills
 ```
